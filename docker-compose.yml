@@ -1,0 +1,27 @@
+services:
+  web:
+    build:
+      context: .
+      target: development
+    container_name: vaibhavmadan
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+    command: npm run dev
+
+  web-prod:
+    build:
+      context: .
+      target: production
+    container_name: vaibhavmadan-prod
+    ports:
+      - "127.0.0.1:3001:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
