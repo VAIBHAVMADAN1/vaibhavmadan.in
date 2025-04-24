@@ -1,4 +1,4 @@
-# vaibhavmadan.tech
+# vaibhavmadan.in
 My personal portfolio website built with Next.js
 
 ## Features
