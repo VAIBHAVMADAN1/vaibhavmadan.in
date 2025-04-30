@@ -53,7 +53,7 @@ export const NavigationBar = () => {
 						href="#"
 						className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
 					>
-						vaibhavmadan.tech
+						vaibhavmadan.in
 					</a>
 
 					{/* Desktop Menu */}
